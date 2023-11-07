@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-<<<<<<< HEAD
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
@@ -18,28 +17,13 @@ export default function App() {
       />
 
       <Text style={styles.olvideContra}>Olvidé la Contraseña</Text>
-=======
-import { StyleSheet, Text, View, TextInput, Image} from 'react-native';
 
-export default function App() {
-  return (
-   <View style={style.container}>
-    <Text style={style.titulo}>Login</Text>
-    <Text style={style.subTitulo}>Inicia Sesión</Text>
-    <TextInput 
-      placeholder='Email'
-      style={style.TextInput}
-    />
-    <TextInput 
-      placeholder='Contraseña'
-      style={style.TextInput}
->>>>>>> d48b3ce9a017964b76a52d9648296b77a85ff9d6
-
-      <Button title="Iniciar sesión" onPress={() => handleLogin()} />
+      <Button
+        title="Iniciar sesión"
+        onPress={handleLogin}
+      />
 
       <Text style={styles.registrate}>¿No tienes una cuenta? Regístrate</Text>
-
-      <StatusBar style='auto' />
     </View>
   );
 }
@@ -72,11 +56,11 @@ const styles = StyleSheet.create({
   },
   olvideContra: {
     fontSize: 16,
-    marginTop: 10, // Añade un espacio entre el texto y el botón "Iniciar sesión"
+    marginTop: 10,
   },
   registrate: {
     fontSize: 16,
-    marginTop: 20, // Añade un espacio entre el botón "Iniciar sesión" y el texto "¿No tienes una cuenta? Regístrate"
+    marginTop: 20,
   }
 });
 
@@ -85,6 +69,4 @@ function handleLogin() {
   // Aquí puedes implementar la lógica de inicio de sesión
   // Por ejemplo, puedes navegar a la pantalla de inicio después de iniciar sesión.
 }
-
-
 
