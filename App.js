@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-<<<<<<< HEAD
+import Navigation from './navigation';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
@@ -18,22 +18,9 @@ export default function App() {
       />
 
       <Text style={styles.olvideContra}>Olvidé la Contraseña</Text>
-=======
-import { StyleSheet, Text, View, TextInput, Image} from 'react-native';
 
-export default function App() {
-  return (
-   <View style={style.container}>
-    <Text style={style.titulo}>Login</Text>
-    <Text style={style.subTitulo}>Inicia Sesión</Text>
-    <TextInput 
-      placeholder='Email'
-      style={style.TextInput}
-    />
-    <TextInput 
-      placeholder='Contraseña'
-      style={style.TextInput}
->>>>>>> d48b3ce9a017964b76a52d9648296b77a85ff9d6
+
+
 
       <Button title="Iniciar sesión" onPress={() => handleLogin()} />
 
