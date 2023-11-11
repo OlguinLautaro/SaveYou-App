@@ -1,5 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+
+
+import Navigation from './navigation';
+
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
@@ -18,10 +22,17 @@ export default function App() {
 
       <Text style={styles.olvideContra}>Olvidé la Contraseña</Text>
 
+
       <Button
         title="Iniciar sesión"
         onPress={handleLogin}
       />
+
+
+
+
+      <Button title="Iniciar sesión" onPress={() => handleLogin()} />
+
 
       <Text style={styles.registrate}>¿No tienes una cuenta? Regístrate</Text>
     </View>
