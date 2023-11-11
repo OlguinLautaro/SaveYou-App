@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput} from 'react-native';
 
-const registro = () =>{
+const Registro = () =>{
     return(
         <text style={{
             fontSize: 29,
