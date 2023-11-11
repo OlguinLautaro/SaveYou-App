@@ -34,3 +34,15 @@ function TabGroup() {
         </Tab.Navigator> //Iconos de inicio, boton y mapa
     )
     }
+
+    export default function Navigation() {
+    
+        return (
+            <NavigationContainer>
+    
+                <TabGroup />
+    
+            </NavigationContainer>
+        
+        )
+    }
